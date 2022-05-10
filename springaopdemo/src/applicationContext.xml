@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置目标对象-->
+    <bean id="usersService" class="com.jian.service.impl.UsersServiceImpl"/>
+
+    <!--配置切面对象-->
+    <bean id="myAspect" class="com.jian.aop.MyAspect"/>
+
+    <bean id="toUppercaseAspect" class="com.jian.aop.ToUppercaseAspect"/>
+
+    <!--配置切面-->
+    <bean id="usersServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--配置目标对象所实现的接口-->
+        <property name="proxyInterfaces" value="com.jian.service.UsersService"/>
+        <!--配置目标对象-->
+        <property name="target" ref="usersService"/>
+        <!--我们的目标对象以后要用哪个界面做增强呢？-->
+        <!--配置切面对象  如果有多个切面，就是按照配置value的上下顺序来决定先执行哪个后执行哪个-->
+        <property name="interceptorNames">
+            <list>
+                <value>myAspect</value>
+                <value>toUppercaseAspect</value>
+            </list>
+        </property>
+        <!--如何生成代理对象  true：使用CGLIB，false：使用JDK的proxy默认使用是jdk的proxy
+        aop jar包里有CGLIB的，就不用再添加CGLIB的jar包了-->
+        <property name="proxyTargetClass" value="true"/>
+    </bean>
+</beans>

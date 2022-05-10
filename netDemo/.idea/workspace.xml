@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc866b3b-601c-46a3-b115-39320af886d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1s6VTsuhsew5yHSnIu3OrRT58ip" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.ChatSocketClient">
+    <configuration name="ChatSocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.ChatSocketClient" />
+      <module name="netDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.ChatSocketServer" />
+      <module name="netDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjectTypeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.ObjectTypeClient" />
+      <module name="netDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWaySocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.OneWaySocketClient" />
+      <module name="netDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWaySocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.OneWaySocketServer" />
+      <module name="netDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ObjectTypeClient" />
+      <item itemvalue="Application.OneWaySocketServer" />
+      <item itemvalue="Application.OneWaySocketClient" />
+      <item itemvalue="Application.ChatSocketServer" />
+      <item itemvalue="Application.ChatSocketClient" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChatSocketClient" />
+        <item itemvalue="Application.ChatSocketServer" />
+        <item itemvalue="Application.OneWaySocketClient" />
+        <item itemvalue="Application.OneWaySocketServer" />
+        <item itemvalue="Application.ObjectTypeClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc866b3b-601c-46a3-b115-39320af886d3" name="Default Changelist" comment="" />
+      <created>1620193036880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620193036880</updated>
+      <workItem from="1620193038047" duration="7399000" />
+      <workItem from="1620213260220" duration="19000" />
+      <workItem from="1620214703232" duration="3519000" />
+      <workItem from="1620220716862" duration="1333000" />
+      <workItem from="1620254605253" duration="1940000" />
+      <workItem from="1620273676017" duration="4062000" />
+      <workItem from="1620292142330" duration="5100000" />
+      <workItem from="1620300734298" duration="5929000" />
+      <workItem from="1620353371166" duration="11178000" />
+      <workItem from="1622964890182" duration="686000" />
+      <workItem from="1630918314466" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620293697980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1620293697980" />
+    <state x="530" y="40" key="#com.intellij.ide.util.MemberChooser" timestamp="1620356923914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="530" y="40" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620356923914" />
+    <state x="490" y="275" width="556" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1620379585296">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="275" width="556" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1620379585296" />
+    <state width="1483" height="330" key="GridCell.Tab.0.bottom" timestamp="1620387543926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="330" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620387543926" />
+    <state width="1483" height="330" key="GridCell.Tab.0.center" timestamp="1620387543925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="330" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620387543925" />
+    <state width="1483" height="330" key="GridCell.Tab.0.left" timestamp="1620387543925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="330" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620387543925" />
+    <state width="1483" height="330" key="GridCell.Tab.0.right" timestamp="1620387543925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="330" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620387543925" />
+    <state width="1483" height="245" key="GridCell.Tab.1.bottom" timestamp="1620387543922">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620387543922" />
+    <state width="1483" height="245" key="GridCell.Tab.1.center" timestamp="1620387543922">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620387543922" />
+    <state width="1483" height="245" key="GridCell.Tab.1.left" timestamp="1620387543922">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620387543922" />
+    <state width="1483" height="245" key="GridCell.Tab.1.right" timestamp="1620387543922">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620387543922" />
+    <state width="314" height="242" key="ShowFilterAction_Filter_Popup" timestamp="1620193537598">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="314" height="242" key="ShowFilterAction_Filter_Popup/0.0.1536.824@0.0.1536.824" timestamp="1620193537598" />
+    <state x="341" y="183" key="run.anything.popup" timestamp="1620355622056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1620355622056" />
+    <state x="347" y="0" width="840" height="822" key="search.everywhere.popup" timestamp="1620357122142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" width="840" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1620357122142" />
+  </component>
+</project>

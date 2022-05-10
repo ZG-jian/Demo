@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--配置解析properties工具类-->
+    <context:property-placeholder location="db.properties"/>
+
+    <!--配置数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--配置SqlSessionFactoryBean
+    1.注入数据源  2.mybatis别名  3.mybatis配置文件配置-->
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.jian.pojo"/>
+        <property name="mapperLocations" value="com/jian/mapper/UsersMapper.xml"/>
+        <!--如果有配置文件就这样<property name="configLocation" value="mybatis-cfg.xml"/>-->
+    </bean>
+
+    <!--配置SQLSessionTemplate-->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+            <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"/>
+    </bean>
+
+    <!--配置业务层 注入SQLSessionTemplate-->
+    <bean id="usersService" class="com.jian.service.impl.UsersServiceImpl">
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>
+
+        <!--就算是用了DaoSupport，也要注入一个sqlSessionFactory，这样他就能够获取到SQL session了
+        这样sqlSessionTemplate才能拿到sqlSession对象再操作-->
+    <bean id="usersService2" class="com.jian.service.impl.UsersServiceImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactoryBean"/>
+    </bean>
+</beans>

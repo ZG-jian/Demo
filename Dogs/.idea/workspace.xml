@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb20b4bc-3124-4a12-9764-ee18d62a67ff" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pYfJUu639dFzcr8gb351dBndsc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/planeWar0.2/src/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jianjian.frank_api" />
+      <recent name="src.com.mygame" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\project\Java\Dogs\planeWar0.2\src\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="ArrTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianjian.array.ArrTest" />
+      <module name="dogs_mannagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jianjian.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BiaoGe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianjian.array.BiaoGe" />
+      <module name="dogs_mannagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jianjian.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teacher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianjian.zuhe.Teacher" />
+      <module name="dogs_mannagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jianjian.zuhe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianjian.interClass.Test" />
+      <module name="dogs_mannagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jianjian.interClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jianjian.polymorphism.Test" />
+      <module name="dogs_mannagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jianjian.polymorphism.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Teacher" />
+        <item itemvalue="Application.BiaoGe" />
+        <item itemvalue="Application.ArrTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb20b4bc-3124-4a12-9764-ee18d62a67ff" name="Default Changelist" comment="" />
+      <created>1615364872351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615364872351</updated>
+      <workItem from="1615364881559" duration="4465000" />
+      <workItem from="1615421136165" duration="7097000" />
+      <workItem from="1615626407250" duration="2090000" />
+      <workItem from="1615680095374" duration="795000" />
+      <workItem from="1615716950786" duration="330000" />
+      <workItem from="1615718737819" duration="1926000" />
+      <workItem from="1615722469478" duration="1096000" />
+      <workItem from="1615850238910" duration="7350000" />
+      <workItem from="1615885450097" duration="76000" />
+      <workItem from="1615891888676" duration="82000" />
+      <workItem from="1615892731311" duration="4893000" />
+      <workItem from="1615978185691" duration="3156000" />
+      <workItem from="1616029495141" duration="4671000" />
+      <workItem from="1616286792014" duration="9757000" />
+      <workItem from="1616415053458" duration="303000" />
+      <workItem from="1616575969084" duration="4236000" />
+      <workItem from="1616585455909" duration="1318000" />
+      <workItem from="1616635980930" duration="8595000" />
+      <workItem from="1616675830565" duration="4857000" />
+      <workItem from="1616712109209" duration="2261000" />
+      <workItem from="1616738847054" duration="609000" />
+      <workItem from="1616739477066" duration="1042000" />
+      <workItem from="1616746198496" duration="693000" />
+      <workItem from="1616748849459" duration="3171000" />
+      <workItem from="1616752046953" duration="7508000" />
+      <workItem from="1616799305164" duration="10426000" />
+      <workItem from="1616823470572" duration="226000" />
+      <workItem from="1616823824681" duration="609000" />
+      <workItem from="1616825485148" duration="1736000" />
+      <workItem from="1616839168632" duration="5309000" />
+      <workItem from="1616886475469" duration="3307000" />
+      <workItem from="1616904666249" duration="607000" />
+      <workItem from="1616910126150" duration="79000" />
+      <workItem from="1617283412135" duration="1080000" />
+      <workItem from="1617284654747" duration="69000" />
+      <workItem from="1617600126339" duration="1931000" />
+      <workItem from="1617609386080" duration="3386000" />
+      <workItem from="1617619224400" duration="37000" />
+      <workItem from="1617708181822" duration="98000" />
+      <workItem from="1617709499300" duration="217000" />
+      <workItem from="1617836862631" duration="269000" />
+      <workItem from="1619243436986" duration="2679000" />
+      <workItem from="1619523768927" duration="12000" />
+      <workItem from="1619523790689" duration="53000" />
+      <workItem from="1619523880265" duration="197000" />
+      <workItem from="1622965474947" duration="1782000" />
+      <workItem from="1630796639813" duration="3993000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1865" height="330" key="GridCell.Tab.0.bottom" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1481" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622978987334" />
+    <state width="1865" height="330" key="GridCell.Tab.0.center" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1481" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622978987334" />
+    <state width="1865" height="330" key="GridCell.Tab.0.left" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1481" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622978987334" />
+    <state width="1865" height="330" key="GridCell.Tab.0.right" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1481" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622978987334" />
+    <state width="1865" height="330" key="GridCell.Tab.1.bottom" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1865" height="330" key="GridCell.Tab.1.center" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1865" height="330" key="GridCell.Tab.1.left" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+    <state width="1865" height="330" key="GridCell.Tab.1.right" timestamp="1630837767822">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="330" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630837767822" />
+  </component>
+</project>

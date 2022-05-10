@@ -1,0 +1,17 @@
+package com.jianjian.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+@WebServlet("/requestAttr.do")
+public class HttpServletRequestAttrServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("key","Jian");
+        req.setAttribute("key","Frank-FuckPPT");
+        req.removeAttribute("key");
+    }
+}

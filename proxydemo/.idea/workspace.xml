@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e35d52bc-044a-4a70-8522-b9ef56d21ee3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wODj977l12f65a7Pn5RP1h8FlK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/jar/cglib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.JdkProxyTest">
+    <configuration name="JdkProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.dynamicproxy.jdkproxy.JdkProxyTest" />
+      <module name="proxydemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.dynamicproxy.jdkproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.staticproxy.test.StaticProxyTest" />
+      <module name="proxydemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.staticproxy.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.cglibproxy.Test" />
+      <module name="proxydemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.cglibproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JdkProxyTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.StaticProxyTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e35d52bc-044a-4a70-8522-b9ef56d21ee3" name="Default Changelist" comment="" />
+      <created>1628320873623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628320873623</updated>
+      <workItem from="1628320876489" duration="6675000" />
+      <workItem from="1628343292946" duration="603000" />
+      <workItem from="1628390243575" duration="17000" />
+      <workItem from="1631001266604" duration="1005000" />
+      <workItem from="1633426129081" duration="898000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1200" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1628325274271">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1200" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628325274271" />
+    <state x="-1377" y="198" key="FileChooserDialogImpl" timestamp="1628325176936">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1377" y="198" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628325176936" />
+    <state width="1865" height="240" key="GridCell.Tab.0.bottom" timestamp="1633427035604">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633427035604" />
+    <state width="1865" height="240" key="GridCell.Tab.0.center" timestamp="1633427035604">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="240" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633427035604" />
+    <state width="1865" height="240" key="GridCell.Tab.0.left" timestamp="1633427035604">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="240" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633427035604" />
+    <state width="1865" height="240" key="GridCell.Tab.0.right" timestamp="1633427035604">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="240" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633427035604" />
+    <state x="-1609" y="0" key="SettingsEditor" timestamp="1628325179343">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1609" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628325179343" />
+    <state x="-1760" y="27" key="new project wizard" timestamp="1628338775225">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1760" y="27" key="new project wizard/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628338775225" />
+  </component>
+</project>

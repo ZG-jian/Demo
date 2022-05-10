@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jian.mapper.UsersMapper">
+    <!--通过这个标签实现映射，保证这个id在映射配置文件中不能有相同的，
+    在一个映射配置文件里是可以有多个resultMap标签的-->
+    <resultMap id="usersMapper" type="com.jian.pojo.Users">
+        <!--property:指定你要对users里面的哪个属性做映射,永远站着属性这边
+        column:列名这边  下面的result里作用也是相同的  对象有多少个属性就得搞多少个映射-->
+        <id property="userid" column="id"/>
+        <result property="username" column="name"/>
+        <result property="usersex" column="sex"/>
+    </resultMap>
+    <!--resultType是直接按照你给定的对象处理，有resultMap就不能用了-->
+    <select id="selectUsersAll" resultMap="usersMapper">
+    select userid as id,username as name ,usersex as sex from users
+    </select>
+
+        <!--一对一的关联查询映射   type可写别名users  一但用了，resultMap标签，即使属性名跟字段名
+         一样也要重新映射一下，没有重新映射，就会被忽略该属性  Users跟Roles一对一关联关系
+         那就是association   javaType就是类型（可选的）  在association里还要配置role的结果集映射-->
+    <resultMap id="usersAndRolesMapper" type="com.jian.pojo.Users">
+        <id property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="usersex" column="usersex"/>
+        <association property="roles" javaType="com.jian.pojo.Roles">
+            <id property="roleid" column="roleid"/>
+            <result property="rolename" column="rolename"/>
+        </association>
+    </resultMap>
+    <select id="selectUsersAndRoles" resultMap="usersAndRolesMapper">
+        select * from users as u ,roles as r where u.userid = r.user_id and u.userid = #{userid}
+    </select>
+
+        <!--一对多映射关系  Roles，就是你返回的结果集跟Roles没关系，那就不用配了
+        由于Orders是List集合，就得换collection标签了   如果你的这个类型是一个List，就是属性的类型是
+        一个List，那在collection标签当中，对于javaType是不用配置的-->
+    <resultMap id="usersAndOrdersMapper" type="com.jian.pojo.Users">
+        <id property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="usersex" column="usersex"/>
+        <collection property="orders" ofType="com.jian.pojo.Orders">
+            <id property="orderid" column="orderid"/>
+            <result property="orderprice" column="orderprice"/>
+        </collection>
+    </resultMap>
+        <!--根据用户ID查询用户以及该用户所对应的所有订单-->
+    <select id="selectUsersAndOrders" resultMap="usersAndOrdersMapper">
+        select * from users as u,orders as o where u.userid = o.user_id and u.userid = #{userid}
+    </select>
+
+
+        <!--多对多关联查询  前面直接拿上面的，然后order里新增了一个item的List，那就collection嵌套
+        有一个属性items，那就给property,List类型，不加javaType  中间表不用考虑，
+        中间表仅是做到了一个数据与数据关系的定义-->
+    <resultMap id="usersAndOrdersAndItems" type="com.jian.pojo.Users">
+        <id property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="usersex" column="usersex"/>
+        <collection property="orders" ofType="com.jian.pojo.Orders">
+            <id property="orderid" column="orderid"/>
+            <result property="orderprice" column="orderprice"/>
+            <collection property="items" ofType="com.jian.pojo.Items">
+                <id property="itemid" column="itemid"/>
+                <result property="itemname" column="itemname"/>
+                <result property="itemprice" column="itemprice"/>
+            </collection>
+        </collection>
+    </resultMap>
+    <!--根据用户ID查询用户与订单以及订单中所包含的商品-->
+    <select id="selectUsersAndOrderAndItems" resultMap="usersAndOrdersAndItems">
+        select * from users as u, orders as o, orders_items as oi,items as i where
+u.userid = o.user_id and o.orderid = oi.order_id
+and oi.item_id = i.itemid
+and u.userid = #{userid}
+    </select>
+
+
+    <!--延迟加载   什么时候用什么时候映射，对于users查询返回users就好了，List集合什么时候用什么时候去查
+                     所以collection里面可以不去配置它的映射关系  column:你要使用user里面的哪个属性作为下一个查询的条件-->
+    <resultMap id="usersAndOrdersMapperLazy" type="com.jian.pojo.Users">
+        <id property="userid" column="userid"/>
+        <result property="username" column="username"/>
+        <result property="usersex" column="usersex"/>
+        <collection property="orders" ofType="com.jian.pojo.Orders" fetchType="lazy" select="selectOrdersByUserId" column="userid"/>
+    </resultMap>
+    <!--根据用户ID查询用户-->
+    <select id="selectUsersByIdLazy" resultMap="usersAndOrdersMapperLazy">
+        select * from users where userid = #{userid}
+    </select>
+    <!--根据用户ID查询订单-->
+    <select id="selectOrdersByUserId" resultType="com.jian.pojo.Orders">
+        select * from orders where user_id = #{userid}
+    </select>
+</mapper>
+
+
+
+

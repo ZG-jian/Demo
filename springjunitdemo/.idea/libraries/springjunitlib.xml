@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="springjunitlib">
+    <CLASSES>
+      <root url="file://G:/jar/springjunitlib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://G:/jar/springjunitlib" recursive="false" />
+  </library>
+</component>

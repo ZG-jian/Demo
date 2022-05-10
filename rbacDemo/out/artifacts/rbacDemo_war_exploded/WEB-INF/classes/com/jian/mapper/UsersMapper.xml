@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jian.mapper.UsersMapper" >
+<!--手动映射-->
+    <resultMap id="userMapper" type="com.jian.pojo.Users">
+        <result property="username" column="username"/>
+        <result property="userpwd" column="userpwd"/>
+        <!--配置关联对象-->
+        <association property="roles" javaType="com.jian.pojo.Roles">
+        <id property="roleid" column="roleid"/>
+            <result property="rolename" column="rolename"/>
+        </association>
+        <!--配置关联对象menus-->
+        <collection property="menus" ofType="com.jian.pojo.Menus">
+            <id property="menuid" column="menuid"/>
+            <result property="menuname" column="menuname"/>
+            <result property="menuurl" column="menuurl"/>
+            <result property="fatherid" column="fatherid"/>
+        </collection>
+        <!--配置关联对象funs-->
+        <collection property="funs" ofType="com.jian.pojo.Funs">
+            <id property="funid" column="funid"/>
+            <result property="funname" column="funname"/>
+            <result property="funurl" column="funurl"/>
+        </collection>
+    </resultMap>
+    <select id="selectUserByName" parameterType="string" resultMap="userMapper">
+      SELECT
+	*
+FROM
+	users u,
+	roles r,
+	roles_menus rm,
+	menus m LEFT JOIN funs f ON m.menuid = f.menu_id
+WHERE
+	u.role_id = r.roleid
+	AND r.roleid = rm.roles_id
+	AND rm.menus_id = m.menuid
+	AND u.username = #{username}
+    </select>
+</mapper>

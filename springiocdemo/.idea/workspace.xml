@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91631179-b624-4391-afdc-b9ea075c0f77" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wAeGJkcVUmNiyGKXG1IkfpSswR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/jar/lib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.DITest">
+    <configuration name="AutoWireTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.test.AutoWireTest" />
+      <module name="springiocdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanScopeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.test.BeanScopeTest" />
+      <module name="springiocdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.test.DITest" />
+      <module name="springiocdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjectFactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.test.ObjectFactoryTest" />
+      <module name="springiocdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamicFactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.test.dynamicFactoryTest" />
+      <module name="springiocdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DITest" />
+        <item itemvalue="Application.dynamicFactoryTest" />
+        <item itemvalue="Application.ObjectFactoryTest" />
+        <item itemvalue="Application.AutoWireTest" />
+        <item itemvalue="Application.BeanScopeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91631179-b624-4391-afdc-b9ea075c0f77" name="Default Changelist" comment="" />
+      <created>1627905722645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627905722645</updated>
+      <workItem from="1627905723836" duration="5972000" />
+      <workItem from="1627956729379" duration="13344000" />
+      <workItem from="1628000523674" duration="244000" />
+      <workItem from="1630970885830" duration="2314000" />
+      <workItem from="1630974669315" duration="638000" />
+      <workItem from="1630988014677" duration="2435000" />
+      <workItem from="1633420232420" duration="2437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1200" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1627984815088">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1200" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627984815088" />
+    <state x="-1377" y="198" key="FileChooserDialogImpl" timestamp="1630970951408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1377" y="198" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630970951408" />
+    <state width="1865" height="365" key="GridCell.Tab.0.bottom" timestamp="1633422902186">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="365" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633422902186" />
+    <state width="1865" height="365" key="GridCell.Tab.0.center" timestamp="1633422902186">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="365" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633422902186" />
+    <state width="1865" height="365" key="GridCell.Tab.0.left" timestamp="1633422902186">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="365" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633422902186" />
+    <state width="1865" height="365" key="GridCell.Tab.0.right" timestamp="1633422902186">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="365" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633422902186" />
+    <state x="-1609" y="0" key="SettingsEditor" timestamp="1630970956368">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1609" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1630970956368" />
+    <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1627913488240">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627913488240" />
+  </component>
+</project>

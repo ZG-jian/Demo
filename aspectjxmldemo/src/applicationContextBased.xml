@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--配置目标对象-->
+    <bean id="baseUsersService" class="com.jian.schema_base.service.impl.BaseUsersServiceImpl"/>
+    
+    <!--配置切面对象-->
+    <bean id="baseMyAspect" class="com.jian.schema_base.aop.BasedMyAspect"/>
+    <!--配置切面对象-->
+    <bean id="baseMyAspect2" class="com.jian.schema_base.aop.BasedMyAspect2"/>
+
+    <!--配置切面-->
+    <aop:config>
+        <!--配置切点-->
+        <aop:pointcut id="baseMyPointcut" expression="execution(* com.jian.schema_base.service.*.*(..))"/>
+        <!--配置切面    多个切面要加id  也是order决定顺序-->
+        <aop:advisor id="my1" advice-ref="baseMyAspect" pointcut-ref="baseMyPointcut" order="2"/>
+        <aop:advisor id="my2" advice-ref="baseMyAspect2" pointcut-ref="baseMyPointcut" order="1"/>
+    </aop:config>
+</beans>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jian.mapper.UsersMapper">
+    <cache/>
+
+    <!--查询所有用户-->
+    <select id="selectUsersAll" resultType="users">
+        select * from users
+</select>
+    <select id="selectUsersById" resultType="users">
+        select * from users where userid = #{userid}
+    </select>
+    <!--根据用户姓名与性别查询用户，使用顺序传参法-->
+    <select id="selectUsersOrderParam" resultType="users">
+        select * from users where username = #{arg0} and usersex = #{arg1}
+    </select>
+    <!--根据用户姓名与性别查询用户，使用@Param注解传参法-->
+    <!--    参数可以叫name和sex，说明我们在接口的抽象方法的参数当中我们要使用
+            @Parameter来定义参数的名称   这个参数的名称必须要叫name和sex-->
+    <select id="selectUsersAnn" resultType="users">
+        select * from users where username = #{name} and usersex = #{sex}
+    </select>
+    <!--根据用户姓名与性别查询用户，使用POJO传参法-->
+    <!--我们用Users对象作为POJO，所以就要用它的属性-->
+    <select id="selectUsersPOJOParam" resultType="users">
+        select * from users where username = #{username} and usersex = #{usersex}
+    </select>
+    <!--根据用户姓名与性别查询用户，使用Map传参法-->
+    <!--就说明未来你用来存放用户名的map的key必须得叫keyname,来存放用户性别的key必须得叫
+                keysex-->
+    <select id="selectUsersMapParam" resultType="users">
+        select * from users where username = #{keyname} and usersex = #{keysex}
+    </select>
+
+
+    <!-- 查询所有数据使用RowBounds实现分页处理-->
+    <select id="selectUsersRowBounds" resultType="users">
+        select * from users
+    </select>
+
+    <select id="selectUsersLimit" resultType="users">
+        select * from users limit #{offset} ,#{limit}
+    </select>
+
+
+    <!--添加用户-->
+    <insert id="insertUsers">
+        insert  into users values (default ,#{username},#{usersex})
+    </insert>
+    <!--添加用户获取主键值[自增]  默认false   最后表示放到Users对象的userid属性中存储-->
+    <!--现在的配置是局部的配置，那在其他的标签如果有也得开启，仅对当前标签生效-->
+    <insert id="insertUsersGetKey" useGeneratedKeys="true" keyProperty="userid">
+        insert  into users values (default ,#{username},#{usersex})
+    </insert>
+    <!--添加用户获取主键值[非自增] -->
+    <!--这种方式也适用于MySQL-->
+    <insert id="insertUsersGetKey2">
+        /*order指定了你的这个查询的执行时间，在添加语句之前还是之后执行 比如Oracle，那就之前*/
+        /*在里面就可以写一个 select seq,nextval from dual
+        keyProperty就是先走查询，然后把取到的值放到你的属性当中，就是userid，我们不是传过来一个user吗
+        userid是没有值的 查询返回的值是什么类型，int*/
+        /* 查一个序列，把查到的值放到userid当中 然后userid里有值了，插入语句就给userid*/
+
+        /*Mysql：在mysql中使用这种方式有不同
+        是通过一个函数来完成的 然后在selectKey中就写
+        select LAST_INSERT_ID() 然后order里就写AFTER 然后insert语句也正常写default*/
+        <selectKey order="AFTER" keyProperty="userid" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        /*seq.nextval*/
+        insert into users values (default ,#{username},#{usersex})
+    </insert>
+
+    <!--根据用户给定的条件进行查询-->
+    <select id="selectUsersByProperty" resultType="users">
+        select * from users where 1=1
+        <if test="userid != 0">
+                and userid = #{userid}
+        </if>
+        /*除了判断为不为空还要判断是不是空串，原来代码里是用哪个符，这里不行
+                    在这里并且就写and或者就写or*/
+        <if test="username != null and username !=''">
+            and username = #{username}
+        </if>
+        <if test="usersex !=null and usersex != ''">
+            and usersex = #{usersex}
+        </if>
+    </select>
+
+            <!--多选一条件  我们只要一个条件，没给就选一个默认条件，这样效果就是，没给条件也不会查所有数据了
+            还得要1=1，要做and拼接-->
+    <select id="selectUsersByChoose" resultType="users">
+        select  * from users where 1=1
+        <choose>
+            <when test="username != null and username !=''">
+                and username = #{username}
+            </when>
+            <when test="usersex != null and usersex !=''">
+                and usersex = #{usersex}
+            </when>
+            <otherwise>
+                and userid = 1
+            </otherwise>
+        </choose>
+    </select>
+
+    <!--根据用户给定的条件进行查询使用where标签实现-->
+    <select id="selectUsersByPropertyWhere" resultType="users">
+        select * from users
+        <where>
+            <if test="userid != 0">
+                and userid = #{userid}
+            </if>
+            <if test="username != null and username !=''">
+                and username = #{username}
+            </if>
+            <if test="usersex !=null and usersex != ''">
+                and usersex = #{usersex}
+            </if>
+        </where>
+    </select>
+
+    <!--这里用MySQL数据库的函数-->
+    <select id="selectUsersByLikeName" resultType="users">
+        <bind name="likeName" value="'%'+name+'%'"/>
+        select * from users where username like #{likeName}
+    </select>
+
+        <!--选择更新    如果username不为空，表示有值，就把这个值取出来更新到数据库当中，usersex也是这样
+                    有值就取出来更新到数据库   更新的列更列之间是有逗号分割的  会帮你去最后一个逗号-->
+    <update id="usersUpdate">
+        update users
+        <set>
+        <if test="username != null and username != ''">
+            username = #{username},
+        </if>
+        <if test="usersex != null and usersex !=''">
+            usersex = #{usersex},
+        </if>
+        </set>
+        where userid = #{userid}
+    </update>
+
+            <!--查询用户ID为1或者2的用户  这样我们foreach的属性就已经给定了，
+                            他就会按照这个属性给我们做一个循环的处理-->
+    <select id="selectUsersByIdUseCollection" resultType="users">
+        select * from users where userid in
+        <foreach collection="coll" item="userid" open="(" separator="," close=")">
+            #{userid}
+        </foreach>
+    </select>
+
+            <!--查询用户ID为1或者2的用户,使用数组传递参数-->
+    <select id="selectUsersByIdUseArray" resultType="users">
+        select * from users where userid in
+        <foreach collection="array" item="userid" open="(" separator="," close=")">
+            #{userid}
+        </foreach>
+    </select>
+
+            <!--根据给定的条件做计数处理   计数返回int-->
+    <!--select count(*) from users where username = 'J' and usersex = 'male'
+    前半部分直接可以写到里面，条件和条件的值我们需要通过Map传递过来，既然是Map那就得foreach标签遍历
+            这里叫suibian，意味着到时候在接口的抽象方法当中必须通过@param来起名字也叫suibian
+                    没有括号出现那就不用open和close，可选的  表示循环添加and字符串，最后一次不加
+                    定义变量名叫value，通过#{}就可以取，这个value就是map的value
+                    index里的key，放的就是我们map的key
+                    对于列名采用字符串拼接的方式，value再去做预编译    这样他就会把我们value的值取出来
+                    做预编译处理最后绑定到sql语句，key就只做字符串拼接，拼接到我们sql语句当中
+                    -->
+    <select id="selectUsersCount" resultType="int">
+        select count(*) from users where
+        <foreach collection="suibian" separator="and" item="value" index="key">
+            ${key} = #{value}
+        </foreach>
+    </select>
+
+        <!--批量添加用户-->
+        <!--insert into users values(DEFAULT,'jianjian','male'),(DEFAULT,'jianjian2','male')-->
+        <!--这里就不能拼括号了，因为它只拼一次，但其实我们有多次-->
+    <insert id="insertUsersBatch">
+        insert into users values
+        <foreach collection="collection" item="user" separator=",">
+            (default ,#{user.username},#{user.usersex})
+        </foreach>
+    </insert>
+</mapper>

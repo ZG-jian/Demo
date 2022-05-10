@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JDBCDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBCDemo_jar</output-path>
+    <root id="archive" name="JDBCDemo.jar">
+      <element id="module-output" name="JDBCDemo" />
+    </root>
+  </artifact>
+</component>

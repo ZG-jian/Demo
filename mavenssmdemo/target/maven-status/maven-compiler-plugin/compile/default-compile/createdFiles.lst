@@ -1,0 +1,9 @@
+com\jian\service\impl\UsersServiceImpl.class
+com\jian\web\controller\UsersController.class
+com\jian\pojo\UsersExample.class
+com\jian\pojo\UsersExample$GeneratedCriteria.class
+com\jian\pojo\Users.class
+com\jian\mapper\UsersMapper.class
+com\jian\pojo\UsersExample$Criteria.class
+com\jian\pojo\UsersExample$Criterion.class
+com\jian\service\UsersService.class

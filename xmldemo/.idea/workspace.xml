@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="847fe9a4-caa5-4e6b-96ea-53f8348abddd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1tThmb83xxtff4Ce03Y2IcRnCa5" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\project\Java\xmldemo\lib" />
+      <recent name="G:\project\Java\xmldemo\src\com\jian\xml\dtd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DemoOfCrawler">
+    <configuration name="Demo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.xml.dtd.Demo2" />
+      <module name="xmldemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.xml.dtd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoOfCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.xml.crawler.DemoOfCrawler" />
+      <module name="xmldemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.xml.crawler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsoupDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.xml.Jsoup.JsoupDemo" />
+      <module name="xmldemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.xml.Jsoup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsoupDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.xml.Jsoup.JsoupDemo2" />
+      <module name="xmldemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.xml.Jsoup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XpathDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jian.xml.Jsoup.XpathDemo" />
+      <module name="xmldemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jian.xml.Jsoup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoOfCrawler" />
+        <item itemvalue="Application.JsoupDemo2" />
+        <item itemvalue="Application.JsoupDemo" />
+        <item itemvalue="Application.XpathDemo" />
+        <item itemvalue="Application.Demo2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="847fe9a4-caa5-4e6b-96ea-53f8348abddd" name="Default Changelist" comment="" />
+      <created>1622799146945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622799146945</updated>
+      <workItem from="1622799149762" duration="7683000" />
+      <workItem from="1622815316389" duration="3290000" />
+      <workItem from="1622880808531" duration="8340000" />
+      <workItem from="1622964863969" duration="1365000" />
+      <workItem from="1622982614773" duration="620000" />
+      <workItem from="1623041962072" duration="7000" />
+      <workItem from="1623057839702" duration="976000" />
+      <workItem from="1624152636858" duration="954000" />
+      <workItem from="1624154167554" duration="3254000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="260" y="0" key="#Notifications" timestamp="1623057871428">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="260" y="0" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1623057871428" />
+    <state width="1481" height="245" key="GridCell.Tab.0.bottom" timestamp="1624170751227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624170751227" />
+    <state width="1481" height="245" key="GridCell.Tab.0.center" timestamp="1624170751227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624170751227" />
+    <state width="1481" height="245" key="GridCell.Tab.0.left" timestamp="1624170751227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624170751227" />
+    <state width="1481" height="245" key="GridCell.Tab.0.right" timestamp="1624170751227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624170751227" />
+    <state width="1481" height="245" key="GridCell.Tab.1.bottom" timestamp="1622895575790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622895575790" />
+    <state width="1481" height="245" key="GridCell.Tab.1.center" timestamp="1622895575790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622895575790" />
+    <state width="1481" height="245" key="GridCell.Tab.1.left" timestamp="1622895575790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622895575790" />
+    <state width="1481" height="245" key="GridCell.Tab.1.right" timestamp="1622895575790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622895575790" />
+    <state x="138" y="0" key="SettingsEditor" timestamp="1622811477540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="138" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622811477540" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1622813524787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622813524787" />
+  </component>
+</project>

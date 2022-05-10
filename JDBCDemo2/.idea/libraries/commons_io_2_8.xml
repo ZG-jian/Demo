@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-io-2.8">
+    <CLASSES>
+      <root url="file://G:/jar/commons-io-2.8.0" />
+      <root url="file://G:/jar/mysql-connector" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://G:/jar/commons-io-2.8.0/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://G:/jar/commons-io-2.8.0" />
+    </SOURCES>
+    <jarDirectory url="file://G:/jar/commons-io-2.8.0" recursive="false" />
+    <jarDirectory url="file://G:/jar/mysql-connector" recursive="false" />
+    <jarDirectory url="file://G:/jar/commons-io-2.8.0" recursive="false" type="SOURCES" />
+  </library>
+</component>

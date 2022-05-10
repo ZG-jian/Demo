@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--配置目标对象-->
+    <bean id="usersService" class="com.jian.aspectj.service.impl.UsersServiceImpl"/>
+
+    <!--配置切面对象-->
+    <bean id="myAspect" class="com.jian.aspectj.aop.MyAspect"/>
+    <!--配置切面对象-->
+    <bean id="myAspect2" class="com.jian.aspectj.aop.MyAspect2"/>
+    <!--配置切面-->
+    <aop:config>
+        <aop:aspect id="my1" ref="myAspect" order="1">
+            <!--配置切点-->
+            <aop:pointcut id="myPointcut" expression="execution(* com.jian.aspectj.service.*.*(..))"/>
+            <!--前置通知-->
+            <aop:before method="MyBefore" pointcut-ref="myPointcut"/>
+            <!--后置通知-->
+            <aop:after-returning method="MyAfterReturning" pointcut-ref="myPointcut"/>
+            <!--环绕通知-->
+            <aop:around method="myAround" pointcut-ref="myPointcut"/>
+            <!--异常通知  要多配一个属性，指定异常参数的变量名-->
+            <aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointcut" throwing="e"/>
+            <!--最终通知-->
+            <aop:after method="myAfter" pointcut-ref="myPointcut"/>
+        </aop:aspect>
+
+        <!--配置切面  整数值越小优先级越高-->
+        <aop:aspect id="my2" ref="myAspect2" order="2">
+            <aop:pointcut id="myPointcut2" expression="execution(* com.jian.aspectj.service.*.*(..))"/>
+            <aop:before method="myAspectBefore" pointcut-ref="myPointcut2"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.48">
+    <CLASSES>
+      <root url="jar://G:/jar/mysql-connector-java-5.1.48.jar!/" />
+      <root url="jar://G:/jar/mybatis-3.5.6.jar!/" />
+      <root url="jar://G:/jar/lombok-1.18.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

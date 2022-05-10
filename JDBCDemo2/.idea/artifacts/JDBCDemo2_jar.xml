@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JDBCDemo2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBCDemo2_jar</output-path>
+    <root id="archive" name="JDBCDemo2.jar">
+      <element id="module-output" name="JDBCDemo2" />
+      <element id="extracted-dir" path="G:/jar/mysql-connector/mysql-connector-java-5.1.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

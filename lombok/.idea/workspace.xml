@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76bf1be4-5ef9-4761-a98a-bf60c342193a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yzP9M7Ea0A8QVkGoStm3uTvhUP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/软件/lombok-1.18.20.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76bf1be4-5ef9-4761-a98a-bf60c342193a" name="Default Changelist" comment="" />
+      <created>1633251290841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633251290841</updated>
+      <workItem from="1633251292128" duration="446000" />
+      <workItem from="1633251943643" duration="8000" />
+      <workItem from="1633251954740" duration="295000" />
+      <workItem from="1633252262084" duration="88000" />
+      <workItem from="1633252359240" duration="58000" />
+      <workItem from="1633252426733" duration="145000" />
+      <workItem from="1633252582147" duration="107000" />
+      <workItem from="1633252699243" duration="2777000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1277" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1633251539568">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1277" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633251539568" />
+    <state x="-1359" y="198" key="FileChooserDialogImpl" timestamp="1633255486029">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1359" y="198" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633255486029" />
+    <state x="-1591" y="0" key="SettingsEditor" timestamp="1633255493511">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1591" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633255493511" />
+    <state x="-1760" y="27" key="new project wizard" timestamp="1633252523748">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1760" y="27" key="new project wizard/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1633252523748" />
+  </component>
+</project>

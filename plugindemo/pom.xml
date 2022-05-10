@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jian</groupId>
+    <artifactId>plugindemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+       <plugins>
+           <!--配置 Generator 插件-->
+           <plugin>
+               <groupId>org.mybatis.generator</groupId>
+               <artifactId>mybatis-generator-maven-plugin</artifactId>
+               <version>1.3.5</version>
+               <dependencies>
+                   <dependency>
+                       <groupId>mysql</groupId>
+                       <artifactId>mysql-connector-java</artifactId>
+                       <version>5.1.38</version>
+                   </dependency>
+               </dependencies>
+               <!--指定配置文件的路径-->
+               <configuration>
+                   <configurationFile>${project.basedir}/src/main/resources/generatorConfig.xml</configurationFile>
+                   <verbose>true</verbose>
+                   <overwrite>true</overwrite>
+               </configuration>
+           </plugin>
+       </plugins>
+    </build>
+
+</project>

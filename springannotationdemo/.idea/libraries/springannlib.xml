@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="springannlib">
+    <CLASSES>
+      <root url="file://G:/jar/springannlib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://G:/jar/springannlib" recursive="false" />
+  </library>
+</component>

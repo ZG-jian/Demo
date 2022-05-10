@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--【A】注册凭证匹配器-->
+    <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+        <property name="hashAlgorithmName" value="md5"></property>
+        <property name="hashIterations" value="2"/>
+    </bean>
+
+    <!--[B]注册自定义Realm  把凭证匹配器给属性-->
+    <bean id="userRealm" class="com.bjsxt.realm.UserRealm">
+        <property name="credentialsMatcher" ref="credentialsMatcher"></property>
+    </bean>
+
+    <!--[C]注册securityManager  看realm数量，这里就用realms了-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realms" ref="userRealm"></property>
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+
+    <!--【D】注册ShiroFilterFactoryBean  这个名字就不能随便乱起了
+    bean对象id名称必须要与web.xml里的targetBeanName保持一致-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"></property>
+        <!--登录地址-->
+        <property name="loginUrl" value="/login"></property>
+        <property name="successUrl" value="/findMoreMenus"></property>
+        <property name="unauthorizedUrl" value="/error.jsp"></property>
+
+        <!--设置过滤器链的属性  authc:拦截指定的路径 anon:放行资源-->
+        <property name="filterChainDefinitions">
+            <value>
+                /login=authc
+                <!--配置退出的过滤器  如果没有配置退出的页面，默认退到项目的默认网页中  index.jsp之类-->
+                /loginOut=logout
+                <!--记住我的路径-->
+                /findMoreMenus=user
+                /**=anon
+            </value>
+        </property>
+    </bean>
+
+    <!--配置退出的过滤器-->
+    <bean id="logout" class="org.apache.shiro.web.filter.authc.LogoutFilter">
+        <property name="redirectUrl" value="login.jsp"></property>
+    </bean>
+
+    <!--表单过滤器-->
+    <bean id="authc" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
+    <property name="usernameParam" value="username"/>
+    <property name="passwordParam" value="password"/>
+    </bean>
+
+
+    <!--配置会话管理器-->
+    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <!--单位是毫秒  5秒-->
+        <property name="globalSessionTimeout" value="5000"></property>
+        <!--删除无效的Session-->
+        <property name="deleteInvalidSessions" value="true"></property>
+        <!--配置完后要记得在securityManager里注入-->
+    </bean>
+
+    <!--注册SimpleCookie-->
+    <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <!--设置cookie的名称-->
+        <property name="name" value="rm"></property>
+        <!--设置cookie的有效时间  单位：秒  七天免登录-->
+        <property name="maxAge" value="604800"></property>
+    </bean>
+
+    <!--需要再注册一个rememberMeManager-->
+    <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="simpleCookie"></property>
+    </bean>
+
+</beans>

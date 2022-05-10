@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="txlib">
+    <CLASSES>
+      <root url="file://G:/jar/txlib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://G:/jar/txlib" recursive="false" />
+  </library>
+</component>

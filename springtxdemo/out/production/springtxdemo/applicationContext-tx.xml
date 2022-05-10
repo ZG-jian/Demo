@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--第一种方式，引入,第二种，弄一个依赖-->
+<!--    <import resource="applicationContext-service.xml"/>-->
+    <!--配置事务管理器切面对象-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--需要注入数据源对象-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--配置事务管理器属性-->
+    <tx:advice id="txAdvice">
+        <tx:attributes>
+            <!--name：需要指定受事务管理的方法  配置方式一：给定完全放啊名 方式二：通过*通配符指定方法名   在这里就是add开头的， 也可以是update*什么的   propagation：配置事务传播行为，不配就默认
+            isolation:配置事务隔离级别  没有配置就以数据库默认的作为隔离级别-->
+            <tx:method name="add*" propagation="REQUIRED" isolation="DEFAULT" timeout="2"/>
+            <tx:method name="find*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置切面  使用sbase   不需要知道方法名，就选这种-->
+    <aop:config>
+        <!--配置切点-->
+        <aop:pointcut id="txPointcut" expression="execution(* com.jian.service.*.*(..))"/>
+        <!--配置切面  一定给事务管理器的id-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
+    </aop:config>
+</beans>

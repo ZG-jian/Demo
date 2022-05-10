@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="usersDaoMybatis" class="com.jian.dao.impl.UsersDaoMybatisImpl"/>
+    <!--通过静态工厂方法实例化对象-->
+    <bean id="usersService2" class="com.jian.factory.ObjectFactory" factory-method="getInstance"/>
+
+    <!--通过动态工厂方法实例化对象  要实例化两个，就是配两个-->
+    <bean id="dynamicObjectFactory" class="com.jian.factory.DynamicObjectFactory"/>
+    <bean id="usersService3" factory-bean="dynamicObjectFactory" factory-method="getInstance"/>
+
+    <bean id="usersService" name="name1,name2,name3" class="com.jian.service.impl.UsersServiceImpl">
+        <property name="usersDao" ref="usersDaoMybatis"/>
+        <property name="username">
+            <value>Jian</value>
+        </property>
+        <property name="userage" value="30"/>
+        <property name="list">
+            <list>
+                <value>Jian</value>
+                <value>Jian1</value>
+                <value>Jian2</value>
+            </list>
+        </property>
+        <property name="users">
+            <list>
+                <bean class="com.jian.pojo.Users">
+                    <property name="username" value="jianjian"/>
+                    <property name="userage" value="40"/>
+                </bean>
+
+
+                <bean class="com.jian.pojo.Users">
+                    <property name="username" value="admin"/>
+                    <property name="userage" value="20"/>
+                </bean>
+            </list>
+        </property>
+        <property name="usersSet">
+            <set>
+                <bean class="com.jian.pojo.Users">
+                    <property name="username" value="jianjian-set"/>
+                    <property name="userage" value="40"/>
+                </bean>
+                <bean class="com.jian.pojo.Users">
+                    <property name="username" value="admin-set"/>
+                    <property name="userage" value="20"/>
+                </bean>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="key1" value="value1"/>
+                <entry key="key2" value="value2"/>
+            </map>
+        </property>
+        <property name="usersMap">
+            <map>
+                <entry key="users1" value-ref="users1"/>
+                <entry key="users2" value-ref="users2"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="pro1">provalue1</prop>
+                <prop key="pro2">provalue2</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--在map配置别的对象得把bean对象放到外面配置，然后再通过value-ref参照id给进去-->
+    <bean id="users1" class="com.jian.pojo.Users">
+        <property name="username" value="jianjian-map"/>
+        <property name="userage" value="40"/>
+    </bean>
+
+    <bean id="users2" class="com.jian.pojo.Users">
+        <property name="username" value="admin-map"/>
+        <property name="userage" value="20"/>
+    </bean>
+</beans>

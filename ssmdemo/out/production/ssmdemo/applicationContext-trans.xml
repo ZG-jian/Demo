@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+        <!--配置事务管理器的切面-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+        <!--配置事务属性  这个标签默认就要去查找一个id为transactionManager的bean对象，如果
+        事务管理器切面的id不叫这个，就得用 transaction-manager配置-->
+    <tx:advice id="myAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED"/><!--表示这个方法必须运行在事务当中-->
+            <tx:method name="modify*" propagation="REQUIRED"/>
+            <tx:method name="drop*" propagation="REQUIRED"/>
+            <tx:method name="userLogin" propagation="REQUIRED"/>
+            <tx:method name="find" read-only="true"/><!--查询事务有一定优化效果-->
+        </tx:attributes>
+    </tx:advice>
+    <!--配置切面  使用sbase   不需要知道方法名，就选这种-->
+    <aop:config>
+        <!--配置切点-->
+        <aop:pointcut id="myPointcut" expression="execution(* com.jian.service.*.*(..))"/>
+        <!--配置切面  一定给事务管理器的id-->
+        <aop:advisor advice-ref="myAdvice" pointcut-ref="myPointcut"/>
+    </aop:config>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>
